@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+  /* Center the navbar brand */
+  .navbar-brand {
+    margin: 0 auto;
+  }
+  
+  /* Adjust spacing between navbar items */
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  /* Add space between navbar items */
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  /* Add media query for small screens */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+    
+    .navbar-toggler {
+      margin-top: 10px;
+    }
+    
+    .navbar-nav {
+      margin: 0;
+    }
+    
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+  
+
+
+.banner{
+    min-height: 45vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::before{
+    content: '';
+    background: url('assets/img/header.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 0.9;
+}
+.banner .name{
+    z-index: 1;
+    color: white;
+    position: relative;
+    font-size: 35px;
+    text-transform: uppercase;
+
+}
+.banner .name::after{
+    content: '';
+    width: 120%;
+    height: 5px;
+    background-color: #F2A204;
+    position: absolute;
+    bottom: -15px;
+    left: -10%;
+}
+
+
+.about_me{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.about_me img{
+    border-radius: 10px;
+}
+.about_me .head{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 50px 0px;
+    margin-top: 100px;
+}
+footer .name{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer .footer_links{
+    display: flex;
+    justify-content: center;
+}
+footer .footer_links a{
+    margin-right: 25px;
+    color: black;
+    font-size: 16px;
+}
+footer .footer_links a:hover{
+    text-decoration: none;
+}
+footer .icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+footer .icons a{
+    text-decoration: none;
+}
+footer .icons a:hover{
+    text-decoration: none;
+}
+footer .icons i{
+    font-size: 22px;
+    color: black;
+    margin-right: 20px;
+}
+.bottom{
+    background-color: #00000096;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+.bottom p{
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.research_projects{
+    margin-top: 70px;
+}
+.research_projects h3{
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.research_projects .box{
+    margin-bottom: 45px;
+    margin-top: 28px;
+}
+.research_projects p{
+    font-size: 16px;
+    color: rgb(60, 60, 60);
+    margin-bottom: 15px;
+}
+
+.top_content{
+    margin-bottom: 50px;
+}
+.top_content .head{
+    font-size: 24px;
+    text-decoration: underline;
+}
+.top_content ol{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.top_content ol li{
+    margin-bottom: 5px;
+}
+.top_content ol li::marker{
+    margin-right: 8px !important;
+}
+.research_projects .sm{
+    font-size: 18px;
+    font-weight: 600;
+    width: 80%;
+    margin-bottom:  10px;
+}
+.research_projects a{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.button_div button{
+    padding: 12px 50px;
+    border: 1px solid black;
+    outline: none;
+    background: black;
+    color: white;
+    border-radius: 9px;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .navbar-brand{
+        margin-left: 5px !important;
+    }
+    .about_me .head{
+        margin-top: 30px;
+    }
+    .banner .name{
+        font-size: 24px;
+    } 
+    .research_projects .sm{
+        width: 100%;
+    }
+}
