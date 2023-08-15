@@ -52,7 +52,7 @@
 }
 .banner::before{
     content: '';
-    background: url('assets/img/header.png');
+    background: url('assets/img/bg.jpg');
     height: 100%;
     width: 100%;
     position: absolute;
@@ -213,7 +213,10 @@ footer .icons i{
     color: white;
     border-radius: 9px;
 }
-
+.msg_head{
+    font-size: 16px;
+    font-weight: bold;
+}
 
 
 
