@@ -119,6 +119,12 @@ footer .footer_links a{
     color: black;
     font-size: 16px;
 }
+footer .footer_links a:last-child{
+    margin-right: 0px;
+}
+footer .icons i.fa-linkedin{
+    margin-right: 0px;
+}
 footer .footer_links a:hover{
     text-decoration: none;
 }
